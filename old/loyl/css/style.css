@@ -1,0 +1,1451 @@
+@import url(reset.css);
+html
+{
+	height: 100%;
+	margin-top: 1px;
+}
+body
+{
+	font-size: 12pt;
+	line-height: normal;
+	background-color: #000;
+	background-image: url(../images/backgound.jpg);
+	background-repeat: no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+/* general link styling */
+a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #943662;
+}
+
+
+/* general styling for headings */
+h1{ font-size: 150%; font-weight: bold;}
+h2{ font-size: 120%; font-weight: normal;}
+h3{ font-size: 90%; font-weight: bold; }
+
+h1, h2, h3, p
+{
+	margin-bottom: 10px;
+}
+
+/* general form error styling */
+form p.error
+{
+	display: block;
+	width: 400px;
+	line-height: 20px;
+	padding-left: 5px;
+	background: #f3a9a9;
+	font-size: 90%;
+}
+
+.error
+{
+	color: #fd0f0f;
+}
+
+#container p.success
+{
+	display: block;
+	width: 400px;
+	line-height: 20px;
+	padding-left: 5px;
+	background: #a2fa9f;
+	font-size: 90%;
+}
+
+.success
+{
+	color: #126002;
+}
+/*-------Home page--------*/
+/*styling for pink color*/
+.new {
+	color:#c83d7e;
+	text-decoration:none;
+	line-style: none;
+}
+.adpink{
+	
+	margin-left: 15px;
+	color: #943662;
+	
+}
+.adpink a{
+	color: #943662;
+	text-decoration: none;
+}
+.adpink a:hover{
+	color: #943662;
+}
+#search_home_title h1.search_home
+{
+	 font-size: 150%;
+	 font-weight: bold;
+	
+}
+/*container or wrapper around all divs*/
+#container {
+	
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+}
+/*styling title of Home page*/
+#search_home_title
+{
+	float: left;
+	width: 350px;
+	height:50px;
+	padding-left: 20px;
+	padding-top: 7px;
+}
+
+#header {
+	float: left;
+	height: 85px;
+	width: 100%;
+}
+
+/*styling logo*/
+#logo {
+	float: left;
+	height: 60px;
+	width: 100px;
+	margin-top: 16px;
+	background-image: url(../images/logo.png);
+	background-repeat: no-repeat;
+}
+#logo span {
+	display: none;
+}
+/* container for the whole navigation bar */
+#nav {
+	float: right;
+	height: 35px;
+	width: 370px;
+	margin-top: 30px;
+	background-image: url(../images/nav_background.png);
+	background-repeat: no-repeat;
+	
+}
+
+
+#nav span
+{
+	display: none;
+}
+
+
+#nav ul
+{
+	
+}
+
+#nav li
+{
+	float: left;
+	margin-left: 15px;
+	list-style: none;
+	text-decoration: none;
+	font-size: 11pt;
+}
+/*Styling rolover button*/
+#nav a:hover 
+{
+color: #943662;
+}
+#nav li.current a
+{
+	color:#943662;
+}
+#nav a.current
+{
+	color:#943662;
+}
+
+
+#nav a 
+{
+	text-align: center;
+	line-height: 30px;
+	float: left;
+	color: white;
+	text-decoration: none;
+	display: block;
+	width: 65px;
+	height: 35px;
+}
+#main_home {
+	float: left;
+	height: 366px;
+	width: 100%;
+	background-color: #FFF;
+	position: relative;
+}
+#main_home span
+{
+	display: none;
+}
+/*styling footer*/
+#footer {
+	float: left;
+	height: 30px;
+	width: 100%;
+	color: #FFF;
+	background-color: #000;
+}
+/*styling left side footer for text links*/
+#footer_left
+{
+	float: left;
+	height: 30px;
+	width: 890px;
+	
+}
+/*styling left side footer for images links*/
+#footer_right
+{
+	float: left;
+	height: 23px;
+	width: 65px;
+	margin-top: 7px;
+	
+}
+#footer_right li
+{
+	float: left;
+	width: 30px;	
+}
+#footer_right li a{
+	text-decoration: none;
+}
+
+#footer ul li.footer
+{
+	width:400px;
+	color: white;
+	font-size: 9pt;
+	margin-left: 0px;
+	margin-top: 15px;
+	float: left;
+	
+}
+#banner
+{
+	float: left;
+	height: 312px;
+	width: 100%;
+}
+#banner span
+{
+	display: none;
+}
+/* styling banner for flash*/
+#banner_right {
+	float: left;
+	height: 312px;
+	width: 590px;
+	background-image: url(../images/banner.jpg);
+	background-repeat: no-repeat;
+}
+
+#search_home 
+{
+	float: left;
+	height: 310px;
+	width: 370px;
+	background-color: #240e25;
+	color: #FFF;	
+}
+#search_home span
+{
+	display: none;
+}
+
+#banner_right span
+{
+	display: none;
+	
+}
+#search_home h1.search_home
+{
+	color: #FFF;
+	padding-left: 0px;
+	padding-top: 15px;	
+}
+/*search form in home page styling*/
+#form
+{
+	float: left;
+	width: 330px;
+	height: 220px;
+	padding-left: 18px;
+	padding-top: 3px;
+}
+form.home
+{
+	height: 210px;
+	line-height: 7px;
+}
+
+form.home ol li
+	{
+		margin-bottom: 10px;
+	}
+
+form.home input, form.home textarea, form.home select
+	{
+	margin-left: 8px;	
+	line-height: 17pt;
+	height: 20px;
+	}
+form.home label
+{
+		width: 100px;
+		display: inline-block;
+}
+/*styling submit button*/
+form.home input[type=submit]
+{
+	margin-left: 0px;
+	margin-top: 10px;
+	width: 82px;
+	height: 24px;
+	background-image:url(../images/search.jpg);	
+}
+
+#main_home_login span
+ {
+	display: none;
+}
+/*styling second add on the right side of home page*/
+/* Gallery of members inside this div*/
+#main_home_newmember {
+	float: left;
+	height: 343px;
+	width: 278px;
+	margin-left: 35px;
+	position: relative;
+	font-family: Merienda+One;
+}
+#inside_members {
+	float: left;
+	height: 265px;
+	width: 278px;
+	background-color: #ebebec;
+	position: relative;
+	border: 1px solid #999;
+	margin-top: 2px;
+}
+
+#login {
+	float: left;
+	height: 200px;
+	width: 200px;
+}
+
+#main_home_newmember span {
+	display: none;
+}
+#main_home_newmember li.members
+{
+	padding-top: 25px;
+	padding-left: 0px;
+	list-style: none;	
+}
+/*styling third add on the right side of home page*/
+#main_home_right
+{
+	float: left;
+	height: 340px;
+	width: 275px;
+	margin-left: 35px;
+	position: relative;	
+	
+}
+#main_home_right h2.member
+{
+	margin-bottom: 0px;
+}
+#home_right-inside {
+	float: left;
+	height: 262px;
+	width: 278px;
+	background-color: #ebebec;
+	position: relative;
+	border: 1px solid #999;
+	background-image: url(../images/lady.png);
+	background-repeat: no-repeat;
+	background-position: 120px;
+}
+
+#home_right-inside p.ad
+ {
+	font-size: 18px;
+	padding-top: 50px;
+	padding-left: 14px;
+	
+	
+}
+
+#home_right-inside p.ad2
+{
+	font-size: 14px;
+	padding-top: 68px;
+	padding-left: 14px;
+	
+	
+}
+
+
+#main_home_right li.members
+{
+	padding-top: 25px;
+	padding-left: 0px;
+	list-style: none;
+	font size: 16px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	
+}
+/*Styling div that contains login form in homepage*/
+#left_home {
+	float: left;
+	height: 325px;
+	width: 265px;
+	padding-left: 20px;
+	padding-top: 25px;
+	position: relative;
+}
+/*styling first add Login form on the right side of home page*/
+#login {
+	float: left;
+	height: 260px;
+	width: 253px;
+	background-color: #ebebec;
+	padding-top: 10px;
+	padding-left: 7px;
+	line-height: 22px;
+	font-size: 13px;
+	border: 1px solid #999;
+	background-image:url(../images/portraite.png);
+	background-repeat: no-repeat;
+	background-position: 172px 185px;
+}
+
+
+#main_home_right span {
+	display: none;
+}
+/*Header of login form*/
+#login_header {
+	background-color: #943662;
+	float: left;
+	height: 27px;
+	width: 255px;
+	padding-top: 5px;
+	padding-left: 7px;
+	color: #FFF;
+}
+#login_header span {
+	display: none;
+}
+   #apDiv1 {
+	position:absolute;
+	left:768px;
+	top:510px;
+	width:169px;
+	height:310px;
+	z-index:3;
+	overflow: visible;
+	visibility: visible;
+}
+/*styling login form in Home page*/
+#login form.login input[type=text]
+	{
+	width: 200px;
+		
+
+	}
+#login form.login input.user
+{
+	margin-left: 0px;
+	margin-top:5px;
+	background-image: url(../images/user.png);
+	background-repeat: no-repeat;
+	background-position: 180px;
+}
+#login form.login input.password
+{
+	margin-left: 0px;
+	margin-top:5px;
+	background-image: url(../images/password.png);
+	background-repeat: no-repeat;
+	background-position: 180px;	
+}
+#login form.login input[type=submit]
+{
+	margin-left: 0px;
+	margin-top: 22px;
+	margin-bottom: 10px;
+	width: 80px;
+	height: 22px;
+	background-image:url(../images/login.jpg);	
+}
+  #apDiv1 {
+	position:absolute;
+	left:1013px;
+	top:416px;
+	width:169px;
+	height:315px;
+	z-index:2;
+	visibility: visible;
+	overflow:visible;
+}
+
+/*-----Serach Page-----*/
+#main_searchpage {
+	float: left;
+	height: 700px;
+	width: 100%;
+	background-color: #FFF;
+}
+/*This div contains whole search form of th page*/
+#left_searchpage {
+	float: left;
+	height: 550px;
+	width: 620px;
+	margin-top: 25px;
+	margin-left: 25px;
+}
+/*styling this div that contains Spry Accordion*/
+#left_serachpage_inside {
+	float: left;
+	height: 30px;
+	width: 620px;
+	background-color: #943662;
+}
+/*styling of text*/
+#left_serachpage_inside p.text {
+	color: white;
+	padding-top: 5px;
+	padding-left: 9px;
+	font-size:14pt;
+
+}
+/*styling this div that contains image of the bottom*/
+#down_searchpage {
+	float: left;
+	height: 335px;
+	width: 267px;
+	margin-top: 19px;
+	margin-left: 48px;
+	background-image: url(../images/image_search.jpg);
+	background-repeat: no-repeat;
+}
+/*styling this div that contains login form in search page*/
+#right_serachpage {
+	float: left;
+	height: 323px;
+	width: 262px;
+	margin-top: 25px;
+	margin-left: 30px;
+}
+
+/*styling AccordianPanel1= General search form in search page */
+#Accordion1 .AccordionPanelContent form.search_search
+{
+	height: 590px;
+	line-height: 5px;
+	background-image:url(../images/photo.jpg);
+	background-repeat: no-repeat;
+	background-position: 470px 5px;	
+}
+
+form.search_search h2.match
+{
+	color: #943662;
+	margin-top: 30px;
+	
+}
+
+form.search_search
+{
+	height: 590px;
+	line-height: 7px;
+	font-size:12px;
+}
+form.search_search label
+{
+		width: 70px;
+		display: inline-block;
+}
+form.search_search ol li
+	{
+		margin-bottom: 12px;
+		
+	}
+
+form.search_search input, form.search_search textarea, form.search_search select
+	{
+	margin-left: 9px;
+	margin-top: 6px;
+	line-height: 10pt;
+	height: 20px;	
+	}
+
+form.search_search input[type=submit]
+{
+	margin-left: 0px;
+	width: 80px;
+	height: 23px;
+	background-image:url(../images/submit.jpg);
+	background-repeat: no-repeat;
+	margin-top: 0px;
+
+		
+}
+form.search_search legend
+{
+		font-size: 12px;
+		font-weight: bold;
+		margin-bottom: 15px;
+		padding-top: 12px;
+		
+}
+/*----------Search2 page------ */
+
+
+/*styling first row contains header of the page*/
+
+#firstrow_search {
+	float: left;
+	height: 26px;
+	width: 305px;
+	margin-left: 8px;
+	margin-top: 0px;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #943662;
+}
+
+#firstrow_search h2
+{
+	color:#943662;
+	size: 16pt;
+}
+/*styling second row contains content of the page*/
+#secondrow_content {
+	float: left;
+	height: 500px;
+	width: 550px;
+}
+
+
+
+#secondrow_content p.title a
+{
+	color:#943662;
+}
+#secondrow_content p.profile a
+{
+	color:#943662;
+	font-size: 9pt;
+	
+}
+#secondrow_content li.info
+{
+	font-size: 11pt;
+	margin-left: 17px;
+	line-height: 12px;
+	margin-top: 30px;
+	float: left;
+	
+}
+#secondrow_content li.line
+{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #943662;
+	padding-bottom: 145px;
+}
+/*styling images in search page*/
+img.ladys {
+	
+	float: left;
+	margin-left: 8px;
+	margin-top: 25px;
+
+}
+/*--------Aboutus Page--------*/
+/*main content for aboutus page*/
+
+#left_searchpage_aboutus
+{
+	float: left;
+	height: 620px;
+	width: 620px;
+	margin-top: 25px;
+	margin-left: 25px;
+}
+/*Banner in flash place here*/
+#banner_aboutus {
+	float: left;
+	height: 190px;
+	width: 100%;
+	background-color: #CCC;
+}
+/*Header of the page */
+#header_aboutus {
+	float: left;
+	height: 30px;
+	width: 300px;
+	margin-top: 20px;
+}
+/*Text header of the page */
+#header_aboutus h2.aboutus {
+	color: #943662;
+	
+}
+/*div for text holder in this page */
+#main_aboutus {
+	float: left;
+	height: 380px;
+	width: 470px;
+}
+/*styling main text in this page */
+#main_aboutus p.aboutus {
+	margin-top: 5px;
+	line-height:22px;
+	font-size: 14px;
+	
+}
+/*styling images at the bottom */
+#down_aboutpage {
+	float: left;
+	height: 280px;
+	width: 267px;
+	margin-top: 76px;
+	margin-left: 48px;
+	background-image:url(../images/aboutimage.png);
+	background-repeat: no-repeat;
+}
+/*--------Profile page------ */
+
+/*styling AccordionPanel Tab*/
+.AccordionPanelOpen .AccordionPanelTabHover {
+	color:#FFF;
+}
+.AccordionPanelTabHover{
+	color:#FFF;
+}
+img.marie
+{
+	margin-top: 7px;
+	margin-left: 13px;
+	float: left;
+}
+li.marie
+{
+	margin-left: 32px;
+	width: 60px;
+	float: left;
+	font-size:9px;	
+}
+p.ad
+{
+	line-height: 18pt;
+}
+/*styling an image at the bottom of page*/
+#down_profilepage {
+	float: left;
+	height: 342px;
+	width: 267px;
+	margin-top: 138px;
+	margin-left: 48px;
+	background-image:url(../images/lady_profile.png);
+	background-repeat: no-repeat;
+	background-position: 4px;
+}
+/*styling Subnav of the profile page*/
+#top_profile {
+	float: left;
+	height: 30px;
+	width: 620px;
+	background-color: #999;
+}
+#mypage {
+	float: left;
+	height: 20px;
+	width: 70px;
+	font-size: 11px;
+	padding-left: 20px;
+	padding-top: 5px;
+	color: #FFFFFF;
+	background-image: url(../images/small.png);
+	background-repeat: no-repeat;
+	background-position: 4px;
+	margin-left: 7px;
+}
+/*styling div recent_activity in the profile page*/
+#recent_activity {
+	float: left;
+	height: 17px;
+	width: 610px;
+	color: #FFFFFF;
+	background-color: #999999;
+	padding-left: 9px;
+	font-size: 12px;
+	padding-top: 3px;
+}
+
+#recent_activity li {
+	color: #000000;
+}
+
+#editprofile {
+	float: left;
+	height: 20px;
+	width: 80px;
+	font-size: 11px;
+	padding-top: 5px;
+	padding-left: 20px;
+	background-image: url(../images/edit.png);
+	background-repeat: no-repeat;
+	background-position: 2px;
+}
+/*styling sidebar row1 (edit profile) of the profile page*/
+#first_right {
+	float: left;
+	height: 17px;
+	width: 210px;
+	font-size: 12px;
+	padding-left: 30px;
+	padding-top: 3px;
+	background-image: url(../images/edit.png);
+	background-repeat: no-repeat;
+	background-color: #999;
+	margin-top: 9px;
+	background-position: 6px;
+}
+/*styling main content in the profile page*/
+#info_profile {
+	float: left;
+	height: 150px;
+	width: 620px;
+	background-color: #e1e1e1;
+}
+#right_profilepageheader {
+	float: left;
+	height: 40px;
+	width: 300px;
+}
+#second_head {
+	float: left;
+	height: 25px;
+	width: 120px;
+	margin-left: 150px;
+}
+/*styling sidebar row2 (Inbox) of the profile page*/
+#second_right {
+	float: left;
+	height: 17px;
+	width: 210px;
+	font-size: 12px;
+	padding-top: 5px;
+	padding-left: 30px;
+	background-image: url(../images/inbox.png);
+	background-repeat: no-repeat;
+	background-position: 7px;
+	background-color: #999;
+}
+/*styling sidebar row3 (sent) of the profile page*/
+#third_right {
+	float: left;
+	height: 20px;
+	width: 210px;
+	font-size: 12px;
+	padding-top: 5px;
+	padding-left: 30px;
+	background-image: url(../images/sent.png);
+	background-repeat: no-repeat;
+	background-position: 7px;
+}
+/*styling sidebar row4 (logout) of the profile page*/
+
+#forth_right {
+	float: left;
+	height: 20px;
+	width: 210px;
+	padding-top: 3px;
+	padding-left: 30px;
+	font-size: 12px;
+	background-image: url(../images/logout.png);
+	background-repeat: no-repeat;
+	background-position: 7px;
+}
+#left_profilepage {
+	float: left;
+	height: 550px;
+	width: 620px;
+	margin-top: 25px;
+	margin-left: 25px;
+	background-color: #CCCCCC;
+}
+/*styling header of the profile page*/
+#left_profilepage_inside {
+	float: left;
+	height: 30px;
+	width: 620px;
+	background-color: #943662;
+}
+#left_profile_inside_left {
+	float: left;
+	height: 30px;
+	width: 430px;
+}
+/*Form place inside of this div */
+#left_profile_inside_right {
+	float: left;
+	height: 30px;
+	width: 180px;
+}
+#left_profilepage_inside p.text {
+	color: white;
+	padding-top: 3px;
+	padding-left: 9px;
+	font-size:13pt;
+
+}
+/* from start from here Just search text and textfield on the the tab bar*/
+form.search_profile
+{
+	
+	line-height: 7px;
+	font-size:12px;
+	color:#FFF;
+	font-weight: bold;
+}
+form.search_profile ol li
+	{
+		margin-bottom: 10px;
+	}
+
+form.search_profile input, textarea, select
+	{
+	width: 110px;
+	margin-left: 2px;
+	height: 11px;
+	margin-top: 6px;	
+
+	}
+form.search_profile label
+{
+		width: 55px;
+		display: inline-block;
+}
+/* Form ends*/
+
+
+#info_profile {
+	float: left;
+	height: 120px;
+	width: 620px;
+}
+/* Image of our profile WDDMDating is place in side of div */
+#info_profile_image {
+	float: left;
+	height: 100px;
+	width: 100px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+img.info_profile
+{
+	margin-left:12px;
+	margin-top:19px;
+}
+/* Data come from Database */
+/*information of Age- Gender-Seeking and location inside of this div */
+#info_profile_textleft {
+	float: left;
+	height: 110px;
+	width: 50px;
+}
+
+#info_profile_textleft li.profile
+{
+	font-size: 12px;
+	margin-top: 9px;
+	margin-left: 5px;
+}
+/*information of 28- Man-Woman and location inside of this div */
+#info_profile_textmiddle {
+	float: left;
+	height: 110px;
+	width: 100px;
+	margin-left: 30px;
+}
+#info_profile_textmiddle li.profile
+{
+	font-size: 12px;
+	margin-top: 9px;
+	margin-left: 5px;
+	
+}
+/*information of Credits- New Gifts-New Friends and Messages inside of this div */
+#info_profile_textmiddle_middle {
+	float: left;
+	height: 110px;
+	width: 100px;
+	margin-left: 30px;
+}
+#info_profile_textmiddle_middle li.profile
+{
+	font-size: 12px;
+	margin-top: 9px;
+	margin-left: 5px;
+	
+	
+}
+/*information of numbers inside of this div */
+#info_profile_textmiddle_last {
+	float: left;
+	height: 110px;
+	width: 100px;
+	margin-left: 30px;
+}
+#info_profile_textmiddle_last li.profile
+{
+	font-size: 12px;
+	margin-top: 9px;
+	margin-left: 5px;
+	
+	
+}
+
+
+/*--------Edit Profile Page------*/
+/*styling div  header of the Edit profile page*/
+#header_profile {
+	float: left;
+	height: 25px;
+	width: 256px;
+	color: #FFF;
+	background-color: #943662;
+	padding-left: 14px;
+	padding-top: 5px;	
+}
+/*styling div on the right side of the Edit profile page*/
+
+#right_profilepage {
+	float: left;
+	height: 195px;
+	width: 270px;
+	margin-top: 25px;
+	margin-left: 30px;
+	color: #000;
+	background-color: #ebebec;
+}
+/*styling conent in the right side of the Edit profile page*/
+#right_profilecontent {
+	float: left;
+	height: 140px;
+	width: 240px;
+	margin-top: 10px;
+	margin-left: 10px;
+	background-color: #999999;
+}
+/*styling Titles My page-Edit Profile and Change photo text*/
+#second_head p.second
+{
+	color: #943662;
+	font-size: 13px;
+	padding-left: 7px;
+	padding-top: 4px;
+	
+}
+#second_head p.second a
+{
+	color: #943662;
+	text-decoration: none;
+}
+#second_head p.second a:hover
+{
+	
+	color:#000;
+	text-decoration: none;
+}
+#editprofile p.mypage
+{
+	color:#943662;
+}
+#editprofile p.mypage a:hover
+{
+	color:#943662;
+}
+#editprofile p.mypage a
+{
+	color: #FFF;
+	text-decoration: none;
+}
+#changephoto p.mypage
+{
+	color: #943662;
+}
+#changephoto p.mypage a:hover
+{
+	color:#943662;
+}
+#changephoto p.mypage a
+{
+	color: #FFF;
+	text-decoration: none;
+}
+
+#mypage p.mypage
+{
+	color:#943662;
+}
+/*styling Titles on the side bar of profile and Edit profile page text*/
+
+#first_right p.profile_sidebar
+{
+	color: #FFF;
+}
+#first_right p.profile_sidebar a:hover
+{
+	color:#943662;
+	text-decoration:none;
+}
+#first_right p.profile_sidebar a
+{
+	color: #FFF;
+	text-decoration:none;
+}
+
+#first_right_people p.profile_sidebar
+{
+	color: #FFF;
+}
+#first_right_people p.profile_sidebar a:hover
+{
+	color:#943662;
+	text-decoration:none;
+}
+#first_right_people p.profile_sidebar a
+{
+	color: #FFF;
+	text-decoration:none;
+}
+#second_right p.profile_sidebar
+{
+	color: #FFF;
+}
+#second_right p.profile_sidebar  a:hover
+{
+	color:#943662;
+	text-decoration:none;
+}
+#second_right p.profile_sidebar a
+{
+	color: #FFF;
+	text-decoration: none;
+}
+#third_right p.profile_sidebar
+{
+	color: #FFF;
+}
+#third_right p.profile_sidebar a:hover
+{
+	color:#943662;
+}
+#third_right p.profile_sidebar a
+{
+	color: #FFF;
+	text-decoration: none;
+}
+
+
+#third_right_people p.profile_sidebar
+{
+	color: #FFF;
+}
+#third_right_people p.profile_sidebar a:hover
+{
+	color:#943662;
+}
+#third_right_people p.profile_sidebar a
+{
+	color: #FFF;
+	text-decoration: none;
+}
+#forth_right p.profile_sidebar
+{
+	color: #FFF;
+}
+#forth_right p.profile_sidebar a:hover
+{
+	color:#943662;
+}
+#forth_right p.profile_sidebar a
+{
+	color: #FFF;
+	text-decoration: none;
+}
+#mypage p.myaccount
+{
+	color:#FFF;
+}
+#mypage p.myaccount a
+{
+	color:#FFF;
+	text-decoration: none;
+}
+#mypage p.myaccount a:hover
+{
+	color:#943662;
+}
+
+
+/* registration page start*/
+#registration_text {
+	float: left;
+	height: 600px;
+	width: 610px;
+	background-color: #ebebec;
+	padding-left: 10px;
+}
+/* registration form start*/
+form.registration legend
+{
+		font-size: 12px;
+		font-weight: bold;
+		margin-bottom: 15px;
+		padding-top: 12px;
+		
+}
+form.registration label
+{
+		width: 100px;
+		display: inline-block;
+}
+
+label.longlabel
+{
+		width: 300px !important;
+		display: inline-block;
+}
+
+form.registration
+{
+	height: 570px;
+	line-height: 10px;
+	font-size:12px;
+}
+
+form.registration ol li
+	{
+		margin-bottom: 10px;
+		
+	}
+
+form.registration input, form.registration textarea, form.registration select
+	{
+	height: 20px;
+	margin-left: 8px;
+	margin-top: 7px;
+	line-height: 17pt;	
+
+	}
+form.registration input.shortinput
+{
+	width: 90px !important;
+	display: inline-block;
+}	
+
+	form.registration input[type=submit]
+{
+	margin-left: 0px;
+	width: 80px;
+	background-image:url(../images/submit.jpg);
+	background-repeat:no-repeat;
+	height: 22px;
+		
+}
+
+/* changephoto page starts*/
+
+#changephoto_content {
+	float: left;
+	height: 130px;
+	width: 620px;
+	background-color: #e1e1e1;
+}
+/*styling div that contains form inside*/
+#changephoto_info {
+	float: left;
+	height: 110px;
+	width: 300px;
+	margin-left: 20px;
+	margin-top: 15px;
+}
+/*styling div that contains image inside*/
+
+#changephoto {
+	float: left;
+	height: 20px;
+	width: 100px;
+	font-size: 11px;
+	padding-top: 5px;
+	padding-left: 20px;
+	color: #943662;
+	background-image: url(../images/picture.png);
+	background-repeat: no-repeat;
+	background-position: 2px;
+}
+/*Form starts in Change photo page*/
+
+form.changephoto
+{
+	height: 120px;
+	line-height: 9px;
+	font-size:12px;
+	
+}
+form.changephoto label
+{
+	width: 200px;
+	display: inline-block;
+}
+
+form.changephoto input, textarea, select
+	{
+	width: 150px;
+	margin-left: 0px;
+	margin-top: 3px;	
+
+	}
+
+form.changephoto input[type=submit]
+{
+	margin-left: 0px;
+	width: 80px;
+	height: 23px;
+	background-image:url(../images/submit.jpg);
+	background-repeat: no-repeat;
+	margin-top: 0px;
+
+		
+}
+form.changephoto ol li
+	{
+		margin-bottom: 12px;
+		
+	}
+/*Form ends*/
+
+/*To delete blue border outside of form in Mac System*/	
+:focus
+{
+	outline: none;
+}
+
+/*-------Profile-People Page----------*/
+/* Her or his name place here after searching members*/ #left_profile_inside_leftpeople {
+	float: left;
+	height: 30px;
+	width: 430px;
+}
+/* Styling Profile Button on head      */
+#mypage_people {
+	float: left;
+	height: 20px;
+	width: 70px;
+	font-size: 11px;
+	padding-left: 20px;
+	padding-top: 5px;
+	color: #943662;
+	background-image: url(../images/small.png);
+	background-repeat: no-repeat;
+	background-position: 4px;
+	margin-left: 7px;
+}
+/* Styling side bar first row on the right side      */
+
+#first_right_people {
+	float: left;
+	height: 17px;
+	width: 210px;
+	font-size: 12px;
+	padding-left: 30px;
+	padding-top: 3px;
+	background-image: url(../images/edit.png);
+	background-repeat: no-repeat;
+	background-color: #999;
+	margin-top: 9px;
+	background-position: 6px;
+}
+/* Styling side bar second row on the right side      */
+#third_right_people {
+	float: left;
+	height: 20px;
+	width: 210px;
+	font-size: 12px;
+	padding-top: 5px;
+	padding-left: 30px;
+	background-image: url(../images/sent.png);
+	background-repeat: no-repeat;
+	background-position: 7px;
+}
+
+/* verification page styling */
+
+#left_verify_inside
+{
+	float: left;
+	height: 30px;
+	width: 620px;
+	background: #943662;
+}
+
+#left_verify_inside p.text
+{
+	color: white;
+	padding-top: 5px;
+	padding-left: 9px;
+	font-size: 14pt;
+}
+
+/* login landing page styling */
+#left_serachpage_inside_login {
+	float: left;
+	height: 30px;
+	width: 620px;
+	background-color: #943662;
+}
+/*styling of text*/
+#left_serachpage_inside_login p.text {
+	color: white;
+	padding-top: 5px;
+	padding-left: 9px;
+	font-size:14pt;
+
+}
+
+#login_text {
+	float: left;
+	height: 510px;
+	width: 610px;
+	background-color: #ebebec;
+	padding-left: 10px;
+}
