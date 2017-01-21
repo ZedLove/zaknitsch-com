@@ -1,3 +1,0 @@
-RewriteEngine on
-RewriteCond $1 !^(index\.php|images|images\/uploads|css|js|robots\.txt|system\/admin|system\/uploads|static\/root|SpryAssets|swf)
-RewriteRule ^(.*)$ /index.php/$1 [L]
