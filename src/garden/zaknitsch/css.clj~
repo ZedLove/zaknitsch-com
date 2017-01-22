@@ -1,4 +1,4 @@
-(ns re-zaknitsch-com.css
+(ns zaknitsch.css
   (:require [garden.def :refer [defstyles]]))
 
 (defstyles screen

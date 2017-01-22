@@ -1,10 +1,14 @@
-(defproject re-zaknitsch-com "0.1.0-SNAPSHOT"
+;; pick up where you left off: https://github.com/Day8/re-frame/tree/master/examples/todomvc/src/todomvc
+
+(defproject zaknitsch "0.1.0-SNAPSHOT"
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.9.229"]
                  [reagent "0.6.0"]
                  [binaryage/devtools "0.8.2"]
                  [garden "1.3.2"]
-                 [re-frisk "0.3.1"]]
+                 [re-frisk "0.3.1"]
+                 [re-frame "0.9.1"]
+                 [ns-tracker "0.3.1"]]
 
   :min-lein-version "2.5.3"
 
@@ -21,8 +25,8 @@
   :figwheel {:css-dirs ["resources/public/css"]}
 
   :garden {:builds [{:id           "screen"
-                     :source-paths ["src/clj"]
-                     :stylesheet   re-zaknitsch-com.css/screen
+                     :source-paths ["src/garden"]
+                     :stylesheet   zaknitsch.css/screen
                      :compiler     {:output-to     "resources/public/css/screen.css"
                                     :pretty-print? true}}]}
 
@@ -46,9 +50,9 @@
   :cljsbuild
   {:builds
    [{:id           "dev"
-     :source-paths ["src/cljs"]
-     :figwheel     {:on-jsload "re-zaknitsch-com.core/reload"}
-     :compiler     {:main                 re-zaknitsch-com.core
+     :source-paths ["src"]
+     :figwheel     {:on-jsload "zaknitsch.core/reload"}
+     :compiler     {:main                 zaknitsch.core
                     :optimizations        :none
                     :output-to            "resources/public/js/compiled/app.js"
                     :output-dir           "resources/public/js/compiled/dev"
@@ -56,8 +60,8 @@
                     :source-map-timestamp true}}
 
     {:id           "min"
-     :source-paths ["src/cljs"]
-     :compiler     {:main            re-zaknitsch-com.core
+     :source-paths ["src"]
+     :compiler     {:main            zaknitsch.core
                     :optimizations   :advanced
                     :output-to       "resources/public/js/compiled/app.js"
                     :output-dir      "resources/public/js/compiled/min"

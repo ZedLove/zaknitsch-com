@@ -7,6 +7,7 @@ pom.xml
 /classes/
 /out/
 /target/
+/resources/public/css
 .lein-deps-sum
 .lein-repl-history
 .lein-plugins/

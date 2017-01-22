@@ -1,9 +1,9 @@
-(ns re-zaknitsch-com.core
+(ns zaknitsch.core
   (:require
    [reagent.core :as reagent]
-   [re-frisk.core :as rf]
-   [devtools.core :as devtools]
-   ))
+   [re-frisk.core :as re-frisk]
+   [re-frame.core :as rf :refer [dispatch dispatch-sync]]
+   [devtools.core :as devtools]))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -17,31 +17,27 @@
    {:text "Hello, what is your name? "}))
 
 
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Page
-
-(defn page [ratom]
-  [:p (:text @ratom) "FIXME"])
-
-
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Initialize App
 
 (defn dev-setup []
   (when debug?
     (enable-console-print!)
-    (rf/enable-frisk!)
-    (rf/add-data :app-state app-state)
+    (re-frisk/enable-frisk!)
+    (re-frisk/add-data :app-state app-state)
     (println "dev mode")
     (devtools/install!)
     ))
 
-(defn reload []
-  (reagent/render [page app-state]
-                  (.getElementById js/document "app")))
 
-(defn ^:export main []
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Entry Point
+
+(defn ^:export main
+  []
   (dev-setup)
-  (reload))
+
+  (dispatch-sync [:initialise-db])
+
+  (reagent/render []
+    (.getElementById js/document "app")))
