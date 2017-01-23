@@ -8,6 +8,9 @@ pom.xml
 /out/
 /target/
 /resources/public/css
+.\#*
+*~
+\#*\#
 .lein-deps-sum
 .lein-repl-history
 .lein-plugins/

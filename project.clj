@@ -21,7 +21,7 @@
   :clean-targets ^{:protect false} ["resources/public/js/compiled"
                                     "target"
                                     "resources/public/css"]
-
+  
   :figwheel {:css-dirs ["resources/public/css"]}
 
   :garden {:builds [{:id           "screen"
@@ -68,4 +68,5 @@
                     :closure-defines {goog.DEBUG false}
                     :pretty-print    false}}
 
-    ]})
+    ]}
+  )

@@ -1,21 +1,14 @@
 (ns zaknitsch.core
   (:require
+   [devtools.core :as devtools]
    [reagent.core :as reagent]
    [re-frisk.core :as re-frisk]
    [re-frame.core :as rf :refer [dispatch dispatch-sync]]
-   [devtools.core :as devtools]))
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Vars
-
-(defonce debug?
-  ^boolean js/goog.DEBUG)
-
-(defonce app-state
-  (reagent/atom
-   {:text "Hello, what is your name? "}))
-
+   [zaknitsch.config :as config :refer [debug?]]
+   [zaknitsch.db :as db]
+   [zaknitsch.events :as events]
+   [zaknitsch.subs :as subs]
+   [zaknitsch.views :as views]))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Initialize App
@@ -23,11 +16,9 @@
 (defn dev-setup []
   (when debug?
     (enable-console-print!)
-    (re-frisk/enable-frisk!)
-    (re-frisk/add-data :app-state app-state)
+    (re-frisk/enable-re-frisk!)
     (println "dev mode")
-    (devtools/install!)
-    ))
+    (devtools/install!)))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -36,8 +27,6 @@
 (defn ^:export main
   []
   (dev-setup)
-
-  (dispatch-sync [:initialise-db])
-
-  (reagent/render []
+  (rf/clear-subscription-cache!)
+  (reagent/render [views/root]
     (.getElementById js/document "app")))
