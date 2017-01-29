@@ -28,5 +28,6 @@
   []
   (dev-setup)
   (rf/clear-subscription-cache!)
+  (rf/dispatch-sync [:initialize-db])
   (reagent/render [views/root]
     (.getElementById js/document "app")))
